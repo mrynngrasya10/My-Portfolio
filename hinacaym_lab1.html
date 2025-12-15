@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+ 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* light gray background */
+            margin: 0;
+            padding: 0;
+ 
+            /* center everything */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+ 
+        /* MAIN CARD CONTAINER */
+        .card {
+            background-color: #E7DDFF;
+            width: 900px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+ 
+        /* HEADER LINKS */
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #0044cc;
+            margin-right: 20px;
+        }
+ 
+        /* INSIDE LAYOUT */
+        .container {
+            display: flex;
+            gap: 60px;
+        }
+ 
+        /* LEFT SIDE */
+        .left {
+            width: 40%;
+        }
+ 
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 2px solid #aaa;
+            margin-bottom: 15px;
+        }
+ 
+        h2 {
+            margin-bottom: 5px;
+        }
+ 
+        /* RIGHT SIDE */
+        .right {
+            width: 50%;
+        }
+ 
+        .section-title {
+            font-size: 22px;
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+ 
+        /* FORM */
+        form input {
+            width: 250px;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            display: block;
+        }
+ 
+        form button {
+            padding: 6px 15px;
+            cursor: pointer;
+        }
+ 
+    </style>
+</head>
+<body>
+ 
+<div class="card">
+ 
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+    </div>
+ 
+    <!-- MAIN CONTENT -->
+    <div class="container">
+ 
+        <!-- LEFT SIDE -->
+        <div class="left">
+ 
+            <img src="hinacay.png" alt="Profile Image" class="profile-img">
+ 
+            <h2>Mary-Ann Grace C. Hinacay</h2>
+            <p>IT Student</p>
+ 
+            <br>
+ 
+            <p><strong>Age:</strong> 19</p>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Status:</strong> Single</p>
+            <p><strong>Nationality: </strong> Filipino</p>
+ 
+            <br>
+ 
+            <h3>Contact</h3>
+            <p>Number: 09123456789</p>
+            <p>Email: hinacaymc@students.nu-fairview.edu.ph</p>
+            <p>Facebook: Mary-Ann Grace Hinacay</p>
+ 
+ 
+            <br>
+ 
+            <h3>Skills</h3>
+            <ul>
+                <li>JAVA</li>
+                <li>NETWORKING</li>
+                <li>DATABASE</li>
+                <li>HTML</li>
+            </ul>
+ 
+        </div>
+ 
+        <!-- RIGHT SIDE -->
+        <div class="right">
+ 
+            <div class="section-title">About Me</div>
+            <p>2nd year IT student from National University - Fairview</p>
+            <p>Class Representative since First year college</p>
+
+            <br>
+ 
+            <div class="section-title">Message Me</div>
+ 
+            <form>
+                <label>Name:</label>
+                <input type="text">
+ 
+                <label>Email:</label>
+                <input type="email">
+ 
+                <label>Message:</label>
+                <input type="text">
+ 
+                <button type="submit">Send</button>
+            </form>
+ 
+        </div>
+ 
+    </div>
+ 
+</div>
+ 
+</body>
+</html>

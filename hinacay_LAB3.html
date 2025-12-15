@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Lab 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <h2>
+            <a href="#">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </h2>
+    </header>
+
+    <!-- BUTTONS -->
+    <div class="controls">
+        <button id="themeBtn">Toggle Dark Mode</button>
+        <button id="editJobBtn">Edit Job Title</button>
+        <button id="toggleSkillsBtn">Hide Skills</button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <section id="main-content">
+
+        <!-- LEFT COLUMN -->
+        <div class="left-column">
+            <img src="hinacay.png" alt="Profile" class="profile-img">
+
+            <h2 class="name-heading">Mary-Ann Grace C. Hinacay</h2>
+            <p class="job-title" id="jobTitle">IT Student</p>
+
+            <p><strong>Age:</strong> 19</p>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Status:</strong> Single</p>
+            <p><strong>Nationality:</strong> Filipino</p>
+            <p><strong>Address:</strong> Quezon City</p>
+
+            <h3>Contact Information</h3>
+            <p>Phone: 09123456789</p>
+            <p>Email: hinacaymc@students.nu-fairview.edu.ph</p>
+            <p>Facebook: Mary-Ann Grace Hinacay</p>
+
+            <!-- SKILLS -->
+            <div id="skillsSection">
+                <h3 id="skills">Skills</h3>
+                <ul class="skills-list">
+                    <li>JAVA</li>
+                    <li>NETWORKING</li>
+                    <li>DATABASE</li>
+                    <li>HTML</li>
+                    <li>CYBERSECURITY</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-column">
+
+            <div class="section-title" id="about">About Me</div>
+            <p class="about-text">
+                I am a 2nd year IT student from National University - Fairview.
+                I am responsible, and I have served as Class Representative
+                since the first year of college.
+            </p>
+
+            <div class="section-title" id="contact">Message Me</div>
+
+            <form class="message-form">
+                <label>Name:</label>
+                <input type="text" id="nameField">
+
+                <label>Email:</label>
+                <input type="email" id="emailField">
+
+                <label>Message:</label>
+                <textarea id="msgBox" maxlength="200"></textarea>
+
+                <p>Characters left: <span id="counter">200</span></p>
+
+                <input type="submit" value="Send Message" onclick="return validateForm()">
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 Mary-Ann Grace Hinacay 💜💜💜
+        <p id="dateDisplay"></p>
+    </footer>
+
+</body>
+</html>
